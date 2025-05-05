@@ -1,0 +1,15 @@
+
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "<account_locator>-<account_name>"
+      user: "<your_user>"
+      password: "<your_password>"
+      role: dbt_role
+      database: dbt_db
+      warehouse: dbt_wh
+      schema: dbt_schema
+      threads: 1
+      client_session_keep_alive: False
